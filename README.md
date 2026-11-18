@@ -58,147 +58,44 @@ The **Recipe Intelligence Chatbot** is an advanced conversational AI system that
 
 ## 🏗️ Architecture
 
-### System Architecture
+### 📊 System Architecture Diagram
+
+> **[🎯 View Interactive Version](.archify/architecture-recipe-chatbot-20261118-043523/system-architecture.html)** - Explore with live motion, dark/light themes, and detailed component cards
+
+The Recipe Intelligence Chatbot follows a layered architecture with specialized processing engines, ML model components, and persistent data storage. The diagram below shows the complete system flow from user query to response.
 
 <div align="center">
 
-```mermaid
-graph TB
-    UI[User Interface<br/>Chat / Jupyter Notebook]
-    
-    IC[Intent Classification Layer<br/>LLM-based Router]
-    
-    SEARCH[SEARCH<br/>Recipe Discovery]
-    STATS[STATS<br/>Analytics]
-    MATCH[MATCH<br/>Ingredient Matching]
-    SUB[SUBSTITUTE<br/>Replacements]
-    
-    HSE[Hybrid Search<br/>Engine]
-    SAE[SQL Analytics<br/>Engine]
-    MSE[Match Scorer<br/>Engine]
-    SE[Substitution<br/>Engine]
-    
-    DB[(SQLite DB<br/>125K Recipes)]
-    EMB[(Dense Index<br/>Embeddings)]
-    BM25[(BM25 Index<br/>Sparse)]
-    CACHE[(Norm Cache<br/>GPU-Generated)]
-    
-    UI --> IC
-    IC --> SEARCH
-    IC --> STATS
-    IC --> MATCH
-    IC --> SUB
-    
-    SEARCH --> HSE
-    STATS --> SAE
-    MATCH --> MSE
-    SUB --> SE
-    
-    HSE --> DB
-    HSE --> EMB
-    HSE --> BM25
-    SAE --> DB
-    MSE --> DB
-    MSE --> CACHE
-    SE --> DB
-    SE --> CACHE
-    
-    style UI fill:#e1f5ff
-    style IC fill:#fff4e1
-    style SEARCH fill:#e8f5e9
-    style STATS fill:#e8f5e9
-    style MATCH fill:#e8f5e9
-    style SUB fill:#e8f5e9
-    style HSE fill:#f3e5f5
-    style SAE fill:#f3e5f5
-    style MSE fill:#f3e5f5
-    style SE fill:#f3e5f5
-    style DB fill:#ffe0b2
-    style EMB fill:#ffe0b2
-    style BM25 fill:#ffe0b2
-    style CACHE fill:#ffe0b2
-```
+![System Architecture](docs/system-architecture.svg)
 
 </div>
 
-### Hybrid Search Pipeline
+### Key Architecture Components
 
-<div align="center">
+**Presentation Layer**
+- **Chat Interface**: Jupyter Notebook / CLI with conversational context management
+- **State Manager**: Tracks dietary restrictions, constraints, and query history
 
-```mermaid
-graph TD
-    Q[User Query:<br/>'Find a vegan chocolate dessert']
-    
-    HYDE[HyDE Generation<br/>LLM creates hypothetical recipe]
-    
-    PS[Parallel Search]
-    
-    DENSE[Dense Search<br/>BGE Embeddings<br/>Semantic Similarity]
-    SPARSE[Sparse Search<br/>BM25<br/>Keyword Matching]
-    
-    T15[Top 15 Results]
-    T10[Top 10 Results]
-    
-    FUSION[Ensemble Fusion<br/>Weighted Merge<br/>Dense: 60% | Sparse: 40%]
-    
-    RERANK[Cross-Encoder Reranking<br/>BGE Reranker]
-    
-    FINAL[Final Top 5 Recipes]
-    
-    Q --> HYDE
-    HYDE --> PS
-    PS --> DENSE
-    PS --> SPARSE
-    DENSE --> T15
-    SPARSE --> T10
-    T15 --> FUSION
-    T10 --> FUSION
-    FUSION --> RERANK
-    RERANK --> FINAL
-    
-    style Q fill:#e1f5ff
-    style HYDE fill:#fff4e1
-    style PS fill:#f3e5f5
-    style DENSE fill:#e8f5e9
-    style SPARSE fill:#e8f5e9
-    style T15 fill:#e3f2fd
-    style T10 fill:#e3f2fd
-    style FUSION fill:#fff9c4
-    style RERANK fill:#f8bbd0
-    style FINAL fill:#c8e6c9
-```
+**Intent Routing**
+- **Intent Classifier**: LLM-powered router directing queries to specialized engines
+- **Groq LLM**: Fast classification for SEARCH, STATS, MATCH, or SUBSTITUTE intents
 
-</div>
+**Processing Engines**
+- **Hybrid Search**: Dense + Sparse retrieval with HyDE enhancement and reranking
+- **SQL Analytics**: Statistical queries on recipe database
+- **Match Scorer**: Ingredient-based recipe matching with scoring
+- **Substitution Engine**: Evidence-based ingredient replacements
 
-### Ingredient Substitution Flow
+**ML Model Layer**
+- **BGE Embedder**: Dense semantic embeddings (384-dim vectors)
+- **BM25 Index**: Sparse keyword-based retrieval
+- **Reranker**: Cross-encoder for final result refinement
+- **Normalizer**: Qwen2.5-1.5B for ingredient extraction
 
-<div align="center">
-
-```mermaid
-graph TD
-    REQ[Recipe: 'Banana Bread with butter'<br/>Request: 'Replace butter']
-    
-    EC[Evidence Collection<br/>• Find similar recipes<br/>• Extract alternatives]
-    
-    EA[Enrichment Analysis<br/>• Calculate frequency ratios<br/>• Rank by enrichment score<br/>• Filter by restrictions]
-    
-    LLM[LLM-Powered Recommendation<br/>• Context: Recipe category<br/>• Evidence: Top 3 candidates<br/>• Output: Detailed adaptation]
-    
-    OUT[Recommendation:<br/>Margarine 7.52x enrichment<br/>+ Updated recipe<br/>+ Impact analysis]
-    
-    REQ --> EC
-    EC --> EA
-    EA --> LLM
-    LLM --> OUT
-    
-    style REQ fill:#e1f5ff
-    style EC fill:#fff4e1
-    style EA fill:#f3e5f5
-    style LLM fill:#e8f5e9
-    style OUT fill:#c8e6c9
-```
-
-</div>
+**Data Storage**
+- **SQLite DB**: 125,164 recipes with normalized ingredients
+- **Embedding Cache**: Pre-computed vectors for fast retrieval
+- **Norm Cache**: GPU-generated ingredient normalizations
 
 ---
 
@@ -518,12 +415,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [ ] **v2.4**: Multi-language support
 - [ ] **v2.5**: User preference learning
 
----
-
-<div align="center">
-
-**⭐ Star this repository if you find it helpful!**
-
-Made with ❤️ and 🍕 by the Recipe Intelligence Team
-
-</div>
