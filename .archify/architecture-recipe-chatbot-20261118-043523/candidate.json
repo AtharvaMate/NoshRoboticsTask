@@ -1,0 +1,347 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Recipe Intelligence Chatbot System Architecture",
+    "output": ".archify/architecture-recipe-chatbot-20261118-043523/system-architecture.html",
+    "quality_profile": "showcase"
+  },
+  "components": [
+    {
+      "id": "user",
+      "type": "external",
+      "label": "User",
+      "sublabel": "Natural language",
+      "pos": [40, 180],
+      "size": [100, 50]
+    },
+    {
+      "id": "chat_interface",
+      "type": "frontend",
+      "label": "Chat Interface",
+      "sublabel": "Jupyter / CLI",
+      "pos": [200, 180],
+      "size": [120, 50]
+    },
+    {
+      "id": "conv_state",
+      "type": "backend",
+      "label": "State Manager",
+      "sublabel": "Context tracking",
+      "pos": [200, 80],
+      "size": [120, 50]
+    },
+    {
+      "id": "intent_classifier",
+      "type": "backend",
+      "label": "Intent Router",
+      "sublabel": "LLM-based",
+      "pos": [380, 180],
+      "size": [120, 50]
+    },
+    {
+      "id": "groq_llm",
+      "type": "cloud",
+      "label": "Groq LLM",
+      "sublabel": "Classification",
+      "pos": [380, 80],
+      "size": [120, 50]
+    },
+    {
+      "id": "search_engine",
+      "type": "backend",
+      "label": "Hybrid Search",
+      "sublabel": "Dense+Sparse",
+      "pos": [560, 80],
+      "size": [120, 50]
+    },
+    {
+      "id": "stats_engine",
+      "type": "backend",
+      "label": "Analytics",
+      "sublabel": "SQL queries",
+      "pos": [560, 180],
+      "size": [120, 50]
+    },
+    {
+      "id": "match_engine",
+      "type": "backend",
+      "label": "Matcher",
+      "sublabel": "Ingredients",
+      "pos": [560, 280],
+      "size": [120, 50]
+    },
+    {
+      "id": "substitution_engine",
+      "type": "backend",
+      "label": "Substitution",
+      "sublabel": "Evidence-based",
+      "pos": [560, 380],
+      "size": [120, 50]
+    },
+    {
+      "id": "claude_llm",
+      "type": "cloud",
+      "label": "Claude",
+      "sublabel": "Reasoning",
+      "pos": [740, 80],
+      "size": [100, 50]
+    },
+    {
+      "id": "bge_embedder",
+      "type": "backend",
+      "label": "BGE Embedder",
+      "sublabel": "Dense vectors",
+      "pos": [740, 180],
+      "size": [100, 50]
+    },
+    {
+      "id": "bm25_index",
+      "type": "backend",
+      "label": "BM25",
+      "sublabel": "Sparse index",
+      "pos": [740, 280],
+      "size": [100, 50]
+    },
+    {
+      "id": "reranker",
+      "type": "backend",
+      "label": "Reranker",
+      "sublabel": "Cross-encoder",
+      "pos": [740, 380],
+      "size": [100, 50]
+    },
+    {
+      "id": "qwen_normalizer",
+      "type": "backend",
+      "label": "Normalizer",
+      "sublabel": "Qwen2.5",
+      "pos": [900, 280],
+      "size": [100, 50]
+    },
+    {
+      "id": "sqlite_db",
+      "type": "database",
+      "label": "SQLite DB",
+      "sublabel": "125K recipes",
+      "pos": [1060, 480],
+      "size": [100, 50]
+    },
+    {
+      "id": "embedding_cache",
+      "type": "database",
+      "label": "Embeddings",
+      "sublabel": ".npy cache",
+      "pos": [1060, 180],
+      "size": [100, 50]
+    },
+    {
+      "id": "norm_cache",
+      "type": "database",
+      "label": "Norm Cache",
+      "sublabel": "GPU cache",
+      "pos": [1060, 380],
+      "size": [100, 50]
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "region",
+      "label": "Processing Layer",
+      "wraps": ["search_engine", "stats_engine", "match_engine", "substitution_engine"]
+    },
+    {
+      "kind": "region",
+      "label": "ML Models",
+      "wraps": ["bge_embedder", "bm25_index", "reranker", "qwen_normalizer"]
+    }
+  ],
+  "connections": [
+    {
+      "id": "c1",
+      "from": "user",
+      "to": "chat_interface",
+      "label": "Query",
+      "variant": "emphasis"
+    },
+    {
+      "id": "c2",
+      "from": "chat_interface",
+      "to": "conv_state",
+      "label": "Context"
+    },
+    {
+      "id": "c3",
+      "from": "chat_interface",
+      "to": "intent_classifier",
+      "label": "Process"
+    },
+    {
+      "id": "c4",
+      "from": "intent_classifier",
+      "to": "groq_llm",
+      "label": "Classify",
+      "variant": "dashed"
+    },
+    {
+      "id": "c5",
+      "from": "intent_classifier",
+      "to": "search_engine",
+      "label": "SEARCH"
+    },
+    {
+      "id": "c6",
+      "from": "intent_classifier",
+      "to": "stats_engine",
+      "label": "STATS"
+    },
+    {
+      "id": "c7",
+      "from": "intent_classifier",
+      "to": "match_engine",
+      "label": "MATCH"
+    },
+    {
+      "id": "c8",
+      "from": "intent_classifier",
+      "to": "substitution_engine",
+      "label": "SUBSTITUTE"
+    },
+    {
+      "id": "c9",
+      "from": "search_engine",
+      "to": "claude_llm",
+      "label": "HyDE",
+      "variant": "dashed"
+    },
+    {
+      "id": "c10",
+      "from": "search_engine",
+      "to": "bge_embedder",
+      "label": "Dense"
+    },
+    {
+      "id": "c11",
+      "from": "search_engine",
+      "to": "bm25_index",
+      "label": "Sparse"
+    },
+    {
+      "id": "c12",
+      "from": "bge_embedder",
+      "to": "embedding_cache",
+      "label": "Load"
+    },
+    {
+      "id": "c13",
+      "from": "search_engine",
+      "to": "reranker",
+      "label": "Rerank"
+    },
+    {
+      "id": "c14",
+      "from": "stats_engine",
+      "to": "sqlite_db",
+      "label": "Query"
+    },
+    {
+      "id": "c15",
+      "from": "match_engine",
+      "to": "qwen_normalizer",
+      "label": "Normalize"
+    },
+    {
+      "id": "c16",
+      "from": "qwen_normalizer",
+      "to": "norm_cache",
+      "label": "Cache"
+    },
+    {
+      "id": "c17",
+      "from": "match_engine",
+      "to": "sqlite_db",
+      "label": "Match"
+    },
+    {
+      "id": "c18",
+      "from": "substitution_engine",
+      "to": "sqlite_db",
+      "label": "Evidence"
+    },
+    {
+      "id": "c19",
+      "from": "substitution_engine",
+      "to": "claude_llm",
+      "label": "Recommend",
+      "variant": "dashed"
+    },
+    {
+      "id": "c20",
+      "from": "search_engine",
+      "to": "sqlite_db",
+      "label": "Fetch"
+    },
+    {
+      "id": "c21",
+      "from": "search_engine",
+      "to": "chat_interface",
+      "label": "Results"
+    },
+    {
+      "id": "c22",
+      "from": "stats_engine",
+      "to": "chat_interface",
+      "label": "Results"
+    },
+    {
+      "id": "c23",
+      "from": "match_engine",
+      "to": "chat_interface",
+      "label": "Results"
+    },
+    {
+      "id": "c24",
+      "from": "substitution_engine",
+      "to": "chat_interface",
+      "label": "Results"
+    },
+    {
+      "id": "c25",
+      "from": "chat_interface",
+      "to": "user",
+      "label": "Response",
+      "variant": "emphasis"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Hybrid Search",
+      "items": [
+        "HyDE: LLM-generated hypothetical recipes",
+        "Dense: BGE embeddings (60% weight)",
+        "Sparse: BM25 keywords (40% weight)",
+        "Reranker: Cross-encoder final scoring"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "Intent Routing",
+      "items": [
+        "SEARCH: Recipe discovery",
+        "STATS: Analytics queries",
+        "MATCH: Ingredient matching",
+        "SUBSTITUTE: Evidence-based replacements"
+      ]
+    },
+    {
+      "dot": "violet",
+      "title": "Data Storage",
+      "items": [
+        "125,164 recipes (AllRecipes, Epicurious, Food Network)",
+        "Pre-computed embeddings cache",
+        "GPU-generated normalization cache"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,367 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "architecture",
+  "quality": "showcase",
+  "specification": {
+    "path": "D:\\GenAI\\Task\\Nosh_Robotics\\.archify\\architecture-recipe-chatbot-20261118-043523\\candidate.json",
+    "sha256": "d7395065209595fde54bb20ac4b9f7f39bb78b6e873c8a100fc694b112cf639a",
+    "bytes": 7479
+  },
+  "artifact": {
+    "path": "D:\\GenAI\\Task\\Nosh_Robotics\\.archify\\architecture-recipe-chatbot-20261118-043523\\system-architecture.html",
+    "sha256": "9618e14def56308028c87ed0b0bb6159312fcb15ae36cb2f3ff4ee2f79a2b032",
+    "bytes": 854299
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "pass"
+  },
+  "diagnostics": [],
+  "diagnosticSummary": {
+    "total": 0,
+    "shown": 0,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "D:\\GenAI\\Task\\Nosh_Robotics\\.archify\\architecture-recipe-chatbot-20261118-043523\\system-architecture.finalize.json",
+    "summaryReceipt": "D:\\GenAI\\Task\\Nosh_Robotics\\.archify\\architecture-recipe-chatbot-20261118-043523\\system-architecture.finalize-summary.json",
+    "browserCheckReceipt": "D:\\GenAI\\Task\\Nosh_Robotics\\.archify\\architecture-recipe-chatbot-20261118-043523\\system-architecture.browser-check.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-18T04:36:27.814Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 3342,
+  "browserCheck": {
+    "requested": true,
+    "ran": true
+  },
+  "visualReviewRecommendation": {
+    "action": "inspect-route-readability",
+    "signals": {
+      "resolvedCrossovers": 27,
+      "routesOverSuggestedBends": 8,
+      "routesOverSuggestedStretch": 2
+    },
+    "reason": "Automated gates passed, but crossings or detours still need perceptual review before claiming visual quality.",
+    "affectedRoutes": {
+      "crossings": [
+        {
+          "left": {
+            "id": "c4",
+            "from": "intent_classifier",
+            "to": "groq_llm",
+            "label": "Classify",
+            "collectionIndex": 3,
+            "artifactIndex": 4
+          },
+          "right": {
+            "id": "c21",
+            "from": "search_engine",
+            "to": "chat_interface",
+            "label": "Results",
+            "collectionIndex": 20,
+            "artifactIndex": 21
+          },
+          "point": [
+            440,
+            154
+          ]
+        },
+        {
+          "left": {
+            "id": "c4",
+            "from": "intent_classifier",
+            "to": "groq_llm",
+            "label": "Classify",
+            "collectionIndex": 3,
+            "artifactIndex": 4
+          },
+          "right": {
+            "id": "c22",
+            "from": "stats_engine",
+            "to": "chat_interface",
+            "label": "Results",
+            "collectionIndex": 21,
+            "artifactIndex": 22
+          },
+          "point": [
+            440,
+            177
+          ]
+        },
+        {
+          "left": {
+            "id": "c5",
+            "from": "intent_classifier",
+            "to": "search_engine",
+            "label": "SEARCH",
+            "collectionIndex": 4,
+            "artifactIndex": 5
+          },
+          "right": {
+            "id": "c11",
+            "from": "search_engine",
+            "to": "bm25_index",
+            "label": "Sparse",
+            "collectionIndex": 10,
+            "artifactIndex": 11
+          },
+          "point": [
+            522,
+            196
+          ],
+          "sharedNode": "search_engine"
+        },
+        {
+          "left": {
+            "id": "c5",
+            "from": "intent_classifier",
+            "to": "search_engine",
+            "label": "SEARCH",
+            "collectionIndex": 4,
+            "artifactIndex": 5
+          },
+          "right": {
+            "id": "c21",
+            "from": "search_engine",
+            "to": "chat_interface",
+            "label": "Results",
+            "collectionIndex": 20,
+            "artifactIndex": 21
+          },
+          "point": [
+            536,
+            130
+          ],
+          "sharedNode": "search_engine"
+        },
+        {
+          "left": {
+            "id": "c6",
+            "from": "intent_classifier",
+            "to": "stats_engine",
+            "label": "STATS",
+            "collectionIndex": 5,
+            "artifactIndex": 6
+          },
+          "right": {
+            "id": "c7",
+            "from": "intent_classifier",
+            "to": "match_engine",
+            "label": "MATCH",
+            "collectionIndex": 6,
+            "artifactIndex": 7
+          },
+          "point": [
+            468,
+            254
+          ],
+          "sharedNode": "intent_classifier"
+        },
+        {
+          "left": {
+            "id": "c7",
+            "from": "intent_classifier",
+            "to": "match_engine",
+            "label": "MATCH",
+            "collectionIndex": 6,
+            "artifactIndex": 7
+          },
+          "right": {
+            "id": "c23",
+            "from": "match_engine",
+            "to": "chat_interface",
+            "label": "Results",
+            "collectionIndex": 22,
+            "artifactIndex": 23
+          },
+          "point": [
+            468,
+            298
+          ],
+          "sharedNode": "match_engine"
+        },
+        {
+          "left": {
+            "id": "c8",
+            "from": "intent_classifier",
+            "to": "substitution_engine",
+            "label": "SUBSTITUTE",
+            "collectionIndex": 7,
+            "artifactIndex": 8
+          },
+          "right": {
+            "id": "c23",
+            "from": "match_engine",
+            "to": "chat_interface",
+            "label": "Results",
+            "collectionIndex": 22,
+            "artifactIndex": 23
+          },
+          "point": [
+            440,
+            298
+          ]
+        },
+        {
+          "left": {
+            "id": "c9",
+            "from": "search_engine",
+            "to": "claude_llm",
+            "label": "HyDE",
+            "collectionIndex": 8,
+            "artifactIndex": 9
+          },
+          "right": {
+            "id": "c10",
+            "from": "search_engine",
+            "to": "bge_embedder",
+            "label": "Dense",
+            "collectionIndex": 9,
+            "artifactIndex": 10
+          },
+          "point": [
+            704,
+            154
+          ],
+          "sharedNode": "search_engine"
+        }
+      ],
+      "detours": [
+        {
+          "relationship": {
+            "id": "c9",
+            "from": "search_engine",
+            "to": "claude_llm",
+            "label": "HyDE",
+            "collectionIndex": 8,
+            "artifactIndex": 9
+          },
+          "bends": 3,
+          "stretch": 1.41
+        },
+        {
+          "relationship": {
+            "id": "c11",
+            "from": "search_engine",
+            "to": "bm25_index",
+            "label": "Sparse",
+            "collectionIndex": 10,
+            "artifactIndex": 11
+          },
+          "bends": 4,
+          "stretch": 1.613
+        },
+        {
+          "relationship": {
+            "id": "c13",
+            "from": "search_engine",
+            "to": "reranker",
+            "label": "Rerank",
+            "collectionIndex": 12,
+            "artifactIndex": 13
+          },
+          "bends": 3,
+          "stretch": 1
+        },
+        {
+          "relationship": {
+            "id": "c14",
+            "from": "stats_engine",
+            "to": "sqlite_db",
+            "label": "Query",
+            "collectionIndex": 13,
+            "artifactIndex": 14
+          },
+          "bends": 4,
+          "stretch": 1
+        },
+        {
+          "relationship": {
+            "id": "c17",
+            "from": "match_engine",
+            "to": "sqlite_db",
+            "label": "Match",
+            "collectionIndex": 16,
+            "artifactIndex": 17
+          },
+          "bends": 3,
+          "stretch": 1.074
+        },
+        {
+          "relationship": {
+            "id": "c19",
+            "from": "substitution_engine",
+            "to": "claude_llm",
+            "label": "Recommend",
+            "collectionIndex": 18,
+            "artifactIndex": 19
+          },
+          "bends": 3,
+          "stretch": 1.181
+        },
+        {
+          "relationship": {
+            "id": "c21",
+            "from": "search_engine",
+            "to": "chat_interface",
+            "label": "Results",
+            "collectionIndex": 20,
+            "artifactIndex": 21
+          },
+          "bends": 6,
+          "stretch": 1.242
+        },
+        {
+          "relationship": {
+            "id": "c22",
+            "from": "stats_engine",
+            "to": "chat_interface",
+            "label": "Results",
+            "collectionIndex": 21,
+            "artifactIndex": 22
+          },
+          "bends": 5,
+          "stretch": 1.152,
+          "directCorridorBlockers": [
+            {
+              "id": "intent_classifier",
+              "label": "Intent Router",
+              "box": [
+                380,
+                180,
+                120,
+                50
+              ]
+            }
+          ]
+        }
+      ],
+      "truncated": true
+    },
+    "hints": [
+      "chat_interface has 5 relationships facing its right side, which fits 2 ports: make that side at least 88px, or move some of those neighbours so they face another side of chat_interface.",
+      "intent_classifier has 3 relationships facing its right side, which fits 2 ports: make that side at least 60px, or move some of those neighbours so they face another side of intent_classifier.",
+      "search_engine has 3 relationships facing its right side, which fits 2 ports: make that side at least 60px, or move some of those neighbours so they face another side of search_engine.",
+      "sqlite_db has 4 relationships facing its left side, which fits 2 ports: make that side at least 74px, or move some of those neighbours so they face another side of sqlite_db.",
+      "intent_classifier → groq_llm crosses search_engine → chat_interface: move the node of whichever is a branch, return, or second entrance to the other side of the main path, so that relationship runs through an empty corridor.",
+      "intent_classifier → groq_llm crosses stats_engine → chat_interface: move the node of whichever is a branch, return, or second entrance to the other side of the main path, so that relationship runs through an empty corridor.",
+      "intent_classifier → search_engine and search_engine → bm25_index cross next to search_engine: move node intent_classifier or bm25_index so the two reach search_engine from different sides (for example one level with it, one directly above or below it).",
+      "intent_classifier → search_engine and search_engine → chat_interface cross next to search_engine: move node intent_classifier or chat_interface so the two reach search_engine from different sides (for example one level with it, one directly above or below it)."
+    ],
+    "repair": "Trace these relationships at the desktop viewport. For Architecture, use references/architecture-layout-repair.md: reflow a blocked main path or tangled connected scene, and repair an isolated defect locally only when the surrounding composition is accepted. Preserve all semantic content and user-fixed geometry. Rerun finalize once after the edit."
+  }
+}

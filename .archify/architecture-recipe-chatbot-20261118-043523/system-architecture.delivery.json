@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "dd5da39d-017c-420a-98d2-605530047840",
+  "status": "current",
+  "command": "deliver",
+  "type": "architecture",
+  "input": "D:\\GenAI\\Task\\Nosh_Robotics\\.archify\\architecture-recipe-chatbot-20261118-043523\\candidate.json",
+  "output": "D:\\GenAI\\Task\\Nosh_Robotics\\.archify\\architecture-recipe-chatbot-20261118-043523\\system-architecture.html",
+  "specification": {
+    "sha256": "d7395065209595fde54bb20ac4b9f7f39bb78b6e873c8a100fc694b112cf639a",
+    "bytes": 7479
+  },
+  "artifact": {
+    "sha256": "9618e14def56308028c87ed0b0bb6159312fcb15ae36cb2f3ff4ee2f79a2b032",
+    "bytes": 854299
+  }
+}

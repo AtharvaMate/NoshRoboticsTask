@@ -1,0 +1,1764 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "architecture",
+  "quality": "showcase",
+  "startedAt": "2026-11-18T04:51:06.434Z",
+  "specification": {
+    "path": "D:\\GenAI\\Task\\Nosh_Robotics\\.archify\\architecture-recipe-chatbot-20261118-043523\\candidate.json",
+    "sha256": "d7395065209595fde54bb20ac4b9f7f39bb78b6e873c8a100fc694b112cf639a",
+    "bytes": 7479
+  },
+  "artifact": {
+    "path": "D:\\GenAI\\Task\\Nosh_Robotics\\.archify\\architecture-recipe-chatbot-20261118-043523\\system-architecture.html",
+    "sha256": "9618e14def56308028c87ed0b0bb6159312fcb15ae36cb2f3ff4ee2f79a2b032",
+    "bytes": 854299
+  },
+  "stages": {
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\athar\\.config\\opencode\\skills\\archify\\bin\\archify.mjs",
+        "deliver",
+        "architecture",
+        "D:\\GenAI\\Task\\Nosh_Robotics\\.archify\\architecture-recipe-chatbot-20261118-043523\\candidate.json",
+        "D:\\GenAI\\Task\\Nosh_Robotics\\.archify\\architecture-recipe-chatbot-20261118-043523\\system-architecture.html",
+        "--quality",
+        "showcase",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "d7395065209595fde54bb20ac4b9f7f39bb78b6e873c8a100fc694b112cf639a",
+          "bytes": 7479
+        },
+        "validation": {
+          "checksPassed": 9,
+          "checkCount": 9,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 783,
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\athar\\.config\\opencode\\skills\\archify\\bin\\archify.mjs",
+        "deliver",
+        "architecture",
+        "D:\\GenAI\\Task\\Nosh_Robotics\\.archify\\architecture-recipe-chatbot-20261118-043523\\candidate.json",
+        "D:\\GenAI\\Task\\Nosh_Robotics\\.archify\\architecture-recipe-chatbot-20261118-043523\\system-architecture.html",
+        "--quality",
+        "showcase",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "dd5da39d-017c-420a-98d2-605530047840",
+        "ok": true,
+        "command": "deliver",
+        "type": "architecture",
+        "input": "D:\\GenAI\\Task\\Nosh_Robotics\\.archify\\architecture-recipe-chatbot-20261118-043523\\candidate.json",
+        "output": "D:\\GenAI\\Task\\Nosh_Robotics\\.archify\\architecture-recipe-chatbot-20261118-043523\\system-architecture.html",
+        "specification": {
+          "sha256": "d7395065209595fde54bb20ac4b9f7f39bb78b6e873c8a100fc694b112cf639a",
+          "bytes": 7479
+        },
+        "artifact": {
+          "sha256": "9618e14def56308028c87ed0b0bb6159312fcb15ae36cb2f3ff4ee2f79a2b032",
+          "bytes": 854299
+        },
+        "validation": {
+          "checksPassed": 9,
+          "checkCount": 9,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 213,
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\athar\\.config\\opencode\\skills\\archify\\bin\\archify.mjs",
+        "check",
+        "D:\\GenAI\\Task\\Nosh_Robotics\\.archify\\architecture-recipe-chatbot-20261118-043523\\system-architecture.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "D:\\GenAI\\Task\\Nosh_Robotics\\.archify\\architecture-recipe-chatbot-20261118-043523\\system-architecture.html",
+        "artifact": {
+          "sha256": "9618e14def56308028c87ed0b0bb6159312fcb15ae36cb2f3ff4ee2f79a2b032",
+          "bytes": 854299
+        },
+        "checks": [
+          {
+            "name": "single_svg",
+            "ok": true,
+            "details": [
+              "found 1 <svg> block(s)"
+            ]
+          },
+          {
+            "name": "finite_svg",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "orthogonal_arrows",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "label_route_clearance",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "relationship_crossings",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "relationship_corridors",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "container_border_runs",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "route_rhythm",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "legend_clearance",
+            "ok": true,
+            "details": []
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "metrics": {
+            "properCrossings": 0,
+            "resolvedCrossovers": 27,
+            "ambiguousCorridors": 0,
+            "arrowheadCollisions": 0,
+            "containerBorderRuns": 0,
+            "labelRouteClearanceIssues": 0,
+            "labelCanvasOverflowIssues": 0,
+            "minLabelRouteClearance": 4,
+            "desktopReadabilityIssues": 0,
+            "viewportHeightIssues": 0,
+            "minProjectedNodeTextPx": 7.5,
+            "maxBends": 6,
+            "routesOverSuggestedBends": 8,
+            "maxStretch": 1.613,
+            "routesOverSuggestedStretch": 2,
+            "minSegmentPx": 19,
+            "minInteriorSegmentPx": 19,
+            "shortSegmentCount": 0,
+            "shortEndpointSegmentCount": 0,
+            "shortInteriorSegmentCount": 0,
+            "microSegmentCount": 0
+          },
+          "suggestedLimits": {
+            "bendsPerRelationship": 2,
+            "stretch": 1.35,
+            "segmentPx": 16,
+            "microSegmentPx": 8
+          },
+          "routeReview": {
+            "crossings": [
+              {
+                "left": {
+                  "id": "c4",
+                  "from": "intent_classifier",
+                  "to": "groq_llm",
+                  "label": "Classify",
+                  "collectionIndex": 3,
+                  "artifactIndex": 4
+                },
+                "right": {
+                  "id": "c21",
+                  "from": "search_engine",
+                  "to": "chat_interface",
+                  "label": "Results",
+                  "collectionIndex": 20,
+                  "artifactIndex": 21
+                },
+                "point": [
+                  440,
+                  154
+                ]
+              },
+              {
+                "left": {
+                  "id": "c4",
+                  "from": "intent_classifier",
+                  "to": "groq_llm",
+                  "label": "Classify",
+                  "collectionIndex": 3,
+                  "artifactIndex": 4
+                },
+                "right": {
+                  "id": "c22",
+                  "from": "stats_engine",
+                  "to": "chat_interface",
+                  "label": "Results",
+                  "collectionIndex": 21,
+                  "artifactIndex": 22
+                },
+                "point": [
+                  440,
+                  177
+                ]
+              },
+              {
+                "left": {
+                  "id": "c5",
+                  "from": "intent_classifier",
+                  "to": "search_engine",
+                  "label": "SEARCH",
+                  "collectionIndex": 4,
+                  "artifactIndex": 5
+                },
+                "right": {
+                  "id": "c11",
+                  "from": "search_engine",
+                  "to": "bm25_index",
+                  "label": "Sparse",
+                  "collectionIndex": 10,
+                  "artifactIndex": 11
+                },
+                "point": [
+                  522,
+                  196
+                ],
+                "sharedNode": "search_engine"
+              },
+              {
+                "left": {
+                  "id": "c5",
+                  "from": "intent_classifier",
+                  "to": "search_engine",
+                  "label": "SEARCH",
+                  "collectionIndex": 4,
+                  "artifactIndex": 5
+                },
+                "right": {
+                  "id": "c21",
+                  "from": "search_engine",
+                  "to": "chat_interface",
+                  "label": "Results",
+                  "collectionIndex": 20,
+                  "artifactIndex": 21
+                },
+                "point": [
+                  536,
+                  130
+                ],
+                "sharedNode": "search_engine"
+              },
+              {
+                "left": {
+                  "id": "c6",
+                  "from": "intent_classifier",
+                  "to": "stats_engine",
+                  "label": "STATS",
+                  "collectionIndex": 5,
+                  "artifactIndex": 6
+                },
+                "right": {
+                  "id": "c7",
+                  "from": "intent_classifier",
+                  "to": "match_engine",
+                  "label": "MATCH",
+                  "collectionIndex": 6,
+                  "artifactIndex": 7
+                },
+                "point": [
+                  468,
+                  254
+                ],
+                "sharedNode": "intent_classifier"
+              },
+              {
+                "left": {
+                  "id": "c7",
+                  "from": "intent_classifier",
+                  "to": "match_engine",
+                  "label": "MATCH",
+                  "collectionIndex": 6,
+                  "artifactIndex": 7
+                },
+                "right": {
+                  "id": "c23",
+                  "from": "match_engine",
+                  "to": "chat_interface",
+                  "label": "Results",
+                  "collectionIndex": 22,
+                  "artifactIndex": 23
+                },
+                "point": [
+                  468,
+                  298
+                ],
+                "sharedNode": "match_engine"
+              },
+              {
+                "left": {
+                  "id": "c8",
+                  "from": "intent_classifier",
+                  "to": "substitution_engine",
+                  "label": "SUBSTITUTE",
+                  "collectionIndex": 7,
+                  "artifactIndex": 8
+                },
+                "right": {
+                  "id": "c23",
+                  "from": "match_engine",
+                  "to": "chat_interface",
+                  "label": "Results",
+                  "collectionIndex": 22,
+                  "artifactIndex": 23
+                },
+                "point": [
+                  440,
+                  298
+                ]
+              },
+              {
+                "left": {
+                  "id": "c9",
+                  "from": "search_engine",
+                  "to": "claude_llm",
+                  "label": "HyDE",
+                  "collectionIndex": 8,
+                  "artifactIndex": 9
+                },
+                "right": {
+                  "id": "c10",
+                  "from": "search_engine",
+                  "to": "bge_embedder",
+                  "label": "Dense",
+                  "collectionIndex": 9,
+                  "artifactIndex": 10
+                },
+                "point": [
+                  704,
+                  154
+                ],
+                "sharedNode": "search_engine"
+              },
+              {
+                "left": {
+                  "id": "c10",
+                  "from": "search_engine",
+                  "to": "bge_embedder",
+                  "label": "Dense",
+                  "collectionIndex": 9,
+                  "artifactIndex": 10
+                },
+                "right": {
+                  "id": "c13",
+                  "from": "search_engine",
+                  "to": "reranker",
+                  "label": "Rerank",
+                  "collectionIndex": 12,
+                  "artifactIndex": 13
+                },
+                "point": [
+                  704,
+                  177
+                ],
+                "sharedNode": "search_engine"
+              },
+              {
+                "left": {
+                  "id": "c10",
+                  "from": "search_engine",
+                  "to": "bge_embedder",
+                  "label": "Dense",
+                  "collectionIndex": 9,
+                  "artifactIndex": 10
+                },
+                "right": {
+                  "id": "c20",
+                  "from": "search_engine",
+                  "to": "sqlite_db",
+                  "label": "Fetch",
+                  "collectionIndex": 19,
+                  "artifactIndex": 20
+                },
+                "point": [
+                  704,
+                  114
+                ],
+                "sharedNode": "search_engine"
+              },
+              {
+                "left": {
+                  "id": "c11",
+                  "from": "search_engine",
+                  "to": "bm25_index",
+                  "label": "Sparse",
+                  "collectionIndex": 10,
+                  "artifactIndex": 11
+                },
+                "right": {
+                  "id": "c13",
+                  "from": "search_engine",
+                  "to": "reranker",
+                  "label": "Rerank",
+                  "collectionIndex": 12,
+                  "artifactIndex": 13
+                },
+                "point": [
+                  716,
+                  256
+                ],
+                "sharedNode": "search_engine"
+              },
+              {
+                "left": {
+                  "id": "c11",
+                  "from": "search_engine",
+                  "to": "bm25_index",
+                  "label": "Sparse",
+                  "collectionIndex": 10,
+                  "artifactIndex": 11
+                },
+                "right": {
+                  "id": "c20",
+                  "from": "search_engine",
+                  "to": "sqlite_db",
+                  "label": "Fetch",
+                  "collectionIndex": 19,
+                  "artifactIndex": 20
+                },
+                "point": [
+                  724,
+                  256
+                ],
+                "sharedNode": "search_engine"
+              },
+              {
+                "left": {
+                  "id": "c11",
+                  "from": "search_engine",
+                  "to": "bm25_index",
+                  "label": "Sparse",
+                  "collectionIndex": 10,
+                  "artifactIndex": 11
+                },
+                "right": {
+                  "id": "c21",
+                  "from": "search_engine",
+                  "to": "chat_interface",
+                  "label": "Results",
+                  "collectionIndex": 20,
+                  "artifactIndex": 21
+                },
+                "point": [
+                  606,
+                  154
+                ],
+                "sharedNode": "search_engine"
+              },
+              {
+                "left": {
+                  "id": "c11",
+                  "from": "search_engine",
+                  "to": "bm25_index",
+                  "label": "Sparse",
+                  "collectionIndex": 10,
+                  "artifactIndex": 11
+                },
+                "right": {
+                  "id": "c22",
+                  "from": "stats_engine",
+                  "to": "chat_interface",
+                  "label": "Results",
+                  "collectionIndex": 21,
+                  "artifactIndex": 22
+                },
+                "point": [
+                  522,
+                  177
+                ]
+              },
+              {
+                "left": {
+                  "id": "c12",
+                  "from": "bge_embedder",
+                  "to": "embedding_cache",
+                  "label": "Load",
+                  "collectionIndex": 11,
+                  "artifactIndex": 12
+                },
+                "right": {
+                  "id": "c19",
+                  "from": "substitution_engine",
+                  "to": "claude_llm",
+                  "label": "Recommend",
+                  "collectionIndex": 18,
+                  "artifactIndex": 19
+                },
+                "point": [
+                  864,
+                  205
+                ]
+              },
+              {
+                "left": {
+                  "id": "c13",
+                  "from": "search_engine",
+                  "to": "reranker",
+                  "label": "Rerank",
+                  "collectionIndex": 12,
+                  "artifactIndex": 13
+                },
+                "right": {
+                  "id": "c14",
+                  "from": "stats_engine",
+                  "to": "sqlite_db",
+                  "label": "Query",
+                  "collectionIndex": 13,
+                  "artifactIndex": 14
+                },
+                "point": [
+                  716,
+                  254
+                ]
+              },
+              {
+                "left": {
+                  "id": "c13",
+                  "from": "search_engine",
+                  "to": "reranker",
+                  "label": "Rerank",
+                  "collectionIndex": 12,
+                  "artifactIndex": 13
+                },
+                "right": {
+                  "id": "c15",
+                  "from": "match_engine",
+                  "to": "qwen_normalizer",
+                  "label": "Normalize",
+                  "collectionIndex": 14,
+                  "artifactIndex": 15
+                },
+                "point": [
+                  716,
+                  354
+                ]
+              },
+              {
+                "left": {
+                  "id": "c14",
+                  "from": "stats_engine",
+                  "to": "sqlite_db",
+                  "label": "Query",
+                  "collectionIndex": 13,
+                  "artifactIndex": 14
+                },
+                "right": {
+                  "id": "c16",
+                  "from": "qwen_normalizer",
+                  "to": "norm_cache",
+                  "label": "Cache",
+                  "collectionIndex": 15,
+                  "artifactIndex": 16
+                },
+                "point": [
+                  1038,
+                  305
+                ]
+              },
+              {
+                "left": {
+                  "id": "c14",
+                  "from": "stats_engine",
+                  "to": "sqlite_db",
+                  "label": "Query",
+                  "collectionIndex": 13,
+                  "artifactIndex": 14
+                },
+                "right": {
+                  "id": "c19",
+                  "from": "substitution_engine",
+                  "to": "claude_llm",
+                  "label": "Recommend",
+                  "collectionIndex": 18,
+                  "artifactIndex": 19
+                },
+                "point": [
+                  864,
+                  254
+                ]
+              },
+              {
+                "left": {
+                  "id": "c14",
+                  "from": "stats_engine",
+                  "to": "sqlite_db",
+                  "label": "Query",
+                  "collectionIndex": 13,
+                  "artifactIndex": 14
+                },
+                "right": {
+                  "id": "c20",
+                  "from": "search_engine",
+                  "to": "sqlite_db",
+                  "label": "Fetch",
+                  "collectionIndex": 19,
+                  "artifactIndex": 20
+                },
+                "point": [
+                  724,
+                  254
+                ],
+                "sharedNode": "sqlite_db"
+              },
+              {
+                "left": {
+                  "id": "c15",
+                  "from": "match_engine",
+                  "to": "qwen_normalizer",
+                  "label": "Normalize",
+                  "collectionIndex": 14,
+                  "artifactIndex": 15
+                },
+                "right": {
+                  "id": "c17",
+                  "from": "match_engine",
+                  "to": "sqlite_db",
+                  "label": "Match",
+                  "collectionIndex": 16,
+                  "artifactIndex": 17
+                },
+                "point": [
+                  704,
+                  354
+                ],
+                "sharedNode": "match_engine"
+              },
+              {
+                "left": {
+                  "id": "c15",
+                  "from": "match_engine",
+                  "to": "qwen_normalizer",
+                  "label": "Normalize",
+                  "collectionIndex": 14,
+                  "artifactIndex": 15
+                },
+                "right": {
+                  "id": "c19",
+                  "from": "substitution_engine",
+                  "to": "claude_llm",
+                  "label": "Recommend",
+                  "collectionIndex": 18,
+                  "artifactIndex": 19
+                },
+                "point": [
+                  864,
+                  354
+                ]
+              },
+              {
+                "left": {
+                  "id": "c15",
+                  "from": "match_engine",
+                  "to": "qwen_normalizer",
+                  "label": "Normalize",
+                  "collectionIndex": 14,
+                  "artifactIndex": 15
+                },
+                "right": {
+                  "id": "c20",
+                  "from": "search_engine",
+                  "to": "sqlite_db",
+                  "label": "Fetch",
+                  "collectionIndex": 19,
+                  "artifactIndex": 20
+                },
+                "point": [
+                  724,
+                  354
+                ]
+              },
+              {
+                "left": {
+                  "id": "c17",
+                  "from": "match_engine",
+                  "to": "sqlite_db",
+                  "label": "Match",
+                  "collectionIndex": 16,
+                  "artifactIndex": 17
+                },
+                "right": {
+                  "id": "c18",
+                  "from": "substitution_engine",
+                  "to": "sqlite_db",
+                  "label": "Evidence",
+                  "collectionIndex": 17,
+                  "artifactIndex": 18
+                },
+                "point": [
+                  704,
+                  514
+                ],
+                "sharedNode": "sqlite_db"
+              },
+              {
+                "left": {
+                  "id": "c17",
+                  "from": "match_engine",
+                  "to": "sqlite_db",
+                  "label": "Match",
+                  "collectionIndex": 16,
+                  "artifactIndex": 17
+                },
+                "right": {
+                  "id": "c19",
+                  "from": "substitution_engine",
+                  "to": "claude_llm",
+                  "label": "Recommend",
+                  "collectionIndex": 18,
+                  "artifactIndex": 19
+                },
+                "point": [
+                  704,
+                  454
+                ]
+              },
+              {
+                "left": {
+                  "id": "c19",
+                  "from": "substitution_engine",
+                  "to": "claude_llm",
+                  "label": "Recommend",
+                  "collectionIndex": 18,
+                  "artifactIndex": 19
+                },
+                "right": {
+                  "id": "c20",
+                  "from": "search_engine",
+                  "to": "sqlite_db",
+                  "label": "Fetch",
+                  "collectionIndex": 19,
+                  "artifactIndex": 20
+                },
+                "point": [
+                  724,
+                  454
+                ]
+              },
+              {
+                "left": {
+                  "id": "c21",
+                  "from": "search_engine",
+                  "to": "chat_interface",
+                  "label": "Results",
+                  "collectionIndex": 20,
+                  "artifactIndex": 21
+                },
+                "right": {
+                  "id": "c22",
+                  "from": "stats_engine",
+                  "to": "chat_interface",
+                  "label": "Results",
+                  "collectionIndex": 21,
+                  "artifactIndex": 22
+                },
+                "point": [
+                  606,
+                  156
+                ],
+                "sharedNode": "chat_interface"
+              }
+            ],
+            "crowdedSides": [
+              {
+                "node": "chat_interface",
+                "label": "Chat Interface",
+                "side": "right",
+                "relationships": 5,
+                "sidePx": 50,
+                "neededPx": 88
+              },
+              {
+                "node": "intent_classifier",
+                "label": "Intent Router",
+                "side": "right",
+                "relationships": 3,
+                "sidePx": 50,
+                "neededPx": 60
+              },
+              {
+                "node": "search_engine",
+                "label": "Hybrid Search",
+                "side": "right",
+                "relationships": 3,
+                "sidePx": 50,
+                "neededPx": 60
+              },
+              {
+                "node": "sqlite_db",
+                "label": "SQLite DB",
+                "side": "left",
+                "relationships": 4,
+                "sidePx": 50,
+                "neededPx": 74
+              }
+            ],
+            "detours": [
+              {
+                "relationship": {
+                  "id": "c9",
+                  "from": "search_engine",
+                  "to": "claude_llm",
+                  "label": "HyDE",
+                  "collectionIndex": 8,
+                  "artifactIndex": 9
+                },
+                "bends": 3,
+                "stretch": 1.41
+              },
+              {
+                "relationship": {
+                  "id": "c11",
+                  "from": "search_engine",
+                  "to": "bm25_index",
+                  "label": "Sparse",
+                  "collectionIndex": 10,
+                  "artifactIndex": 11
+                },
+                "bends": 4,
+                "stretch": 1.613
+              },
+              {
+                "relationship": {
+                  "id": "c13",
+                  "from": "search_engine",
+                  "to": "reranker",
+                  "label": "Rerank",
+                  "collectionIndex": 12,
+                  "artifactIndex": 13
+                },
+                "bends": 3,
+                "stretch": 1
+              },
+              {
+                "relationship": {
+                  "id": "c14",
+                  "from": "stats_engine",
+                  "to": "sqlite_db",
+                  "label": "Query",
+                  "collectionIndex": 13,
+                  "artifactIndex": 14
+                },
+                "bends": 4,
+                "stretch": 1
+              },
+              {
+                "relationship": {
+                  "id": "c17",
+                  "from": "match_engine",
+                  "to": "sqlite_db",
+                  "label": "Match",
+                  "collectionIndex": 16,
+                  "artifactIndex": 17
+                },
+                "bends": 3,
+                "stretch": 1.074
+              },
+              {
+                "relationship": {
+                  "id": "c19",
+                  "from": "substitution_engine",
+                  "to": "claude_llm",
+                  "label": "Recommend",
+                  "collectionIndex": 18,
+                  "artifactIndex": 19
+                },
+                "bends": 3,
+                "stretch": 1.181
+              },
+              {
+                "relationship": {
+                  "id": "c21",
+                  "from": "search_engine",
+                  "to": "chat_interface",
+                  "label": "Results",
+                  "collectionIndex": 20,
+                  "artifactIndex": 21
+                },
+                "bends": 6,
+                "stretch": 1.242
+              },
+              {
+                "relationship": {
+                  "id": "c22",
+                  "from": "stats_engine",
+                  "to": "chat_interface",
+                  "label": "Results",
+                  "collectionIndex": 21,
+                  "artifactIndex": 22
+                },
+                "bends": 5,
+                "stretch": 1.152,
+                "directCorridorBlockers": [
+                  {
+                    "id": "intent_classifier",
+                    "label": "Intent Router",
+                    "box": [
+                      380,
+                      180,
+                      120,
+                      50
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "leadingSpace": {
+            "measured": true,
+            "emptyTopPx": 50,
+            "emptyTopRatio": 0.08,
+            "occupiedTop": 50,
+            "viewBoxTop": 0,
+            "canvasHeight": 622,
+            "typicalNodeHeight": 50,
+            "reviewSuggested": false
+          },
+          "desktopReadability": {
+            "budgetBasis": "recognized-declared-wide",
+            "readerContract": "declared-wide-v1",
+            "availableDiagramWidth": 1125,
+            "actualBudgetPx": 1125,
+            "actualReaderWidth": 1155,
+            "desiredReaderWidth": 1155,
+            "viewportCap": 1376,
+            "limit": "source-size",
+            "requestedTargetPx": 7.5,
+            "requestedTargetMet": true,
+            "hardFloorPx": 6,
+            "hardFloorMet": true,
+            "minimumOwner": {
+              "kind": "edge",
+              "id": "c1",
+              "from": "user",
+              "to": "chat_interface"
+            },
+            "minimumSourceTextPx": 8,
+            "minimumProjectedTextPx": 7.5,
+            "semanticTextCount": 61
+          },
+          "issues": []
+        },
+        "provenance": "current",
+        "deliveryReceiptId": "dd5da39d-017c-420a-98d2-605530047840"
+      }
+    },
+    "browser-check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 1817,
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\athar\\.config\\opencode\\skills\\archify\\bin\\archify.mjs",
+        "browser-check",
+        "D:\\GenAI\\Task\\Nosh_Robotics\\.archify\\architecture-recipe-chatbot-20261118-043523\\system-architecture.html",
+        "--json",
+        "--require-provenance"
+      ],
+      "execution": "in-process",
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "browser-check",
+        "evidenceKind": "automated-browser",
+        "status": "pass",
+        "visualReview": "not-requested",
+        "provenance": "current",
+        "deliveryReceiptId": "dd5da39d-017c-420a-98d2-605530047840",
+        "artifact": {
+          "path": "D:\\GenAI\\Task\\Nosh_Robotics\\.archify\\architecture-recipe-chatbot-20261118-043523\\system-architecture.html",
+          "sha256": "9618e14def56308028c87ed0b0bb6159312fcb15ae36cb2f3ff4ee2f79a2b032",
+          "bytes": 854299
+        },
+        "state": {
+          "detail": "read",
+          "motion": "still"
+        },
+        "chrome": {
+          "status": "available",
+          "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+        },
+        "diagnostics": [],
+        "containment": {
+          "status": "pass",
+          "policy": "fit-or-reader-declared-readable-vertical-scroll",
+          "viewports": [
+            {
+              "width": 1440,
+              "height": 900,
+              "theme": "light",
+              "innerWidth": 1440,
+              "innerHeight": 900,
+              "scrollWidth": 1440,
+              "scrollHeight": 900,
+              "overflowX": false,
+              "overflowY": false,
+              "verticalScrollAccepted": false,
+              "overflowDisposition": "contained",
+              "readerLayout": "adaptive",
+              "readerOverflow": null,
+              "readerFit": "intrinsic-height",
+              "ok": true,
+              "readerWidth": 1376,
+              "diagramWidth": 1346,
+              "pageComposition": {
+                "bodyPaddingPx": 12,
+                "headerPx": 52,
+                "diagramChromePx": 78,
+                "svgPx": 698,
+                "cardsPx": 0,
+                "viewBoxHeight": 622
+              },
+              "viewBoxWidth": 1200,
+              "minimumProjectedNodeTextPx": 8,
+              "minimumProjectedNonEdgeTextPx": 9,
+              "minimumProjectedEdgeTextPx": 8,
+              "minimumProjectedNodeText": "Query",
+              "minimumProjectedNodeTextDetail": "edge",
+              "minimumProjectedNodeTextOwner": {
+                "kind": "edge",
+                "id": "c1",
+                "from": "user",
+                "to": "chat_interface"
+              },
+              "minimumRequiredNodeTextPx": 6,
+              "readabilityOk": true,
+              "hasLegend": true,
+              "hasNavigationDock": true,
+              "legendDockIntersectionArea": 0,
+              "dockStageIntersectionArea": 0,
+              "dockStageGap": 10,
+              "requiredDockStageGap": 10,
+              "viewerChromeStageOk": true,
+              "viewerChromeReserve": 54,
+              "viewerChromeActive": true,
+              "viewerChromeOk": true,
+              "resolvedTheme": "light"
+            },
+            {
+              "width": 1600,
+              "height": 1000,
+              "theme": "light",
+              "innerWidth": 1600,
+              "innerHeight": 1000,
+              "scrollWidth": 1600,
+              "scrollHeight": 1000,
+              "overflowX": false,
+              "overflowY": false,
+              "verticalScrollAccepted": false,
+              "overflowDisposition": "contained",
+              "readerLayout": "adaptive",
+              "readerOverflow": null,
+              "readerFit": "intrinsic-height",
+              "ok": true,
+              "readerWidth": 1535,
+              "diagramWidth": 1505,
+              "pageComposition": {
+                "bodyPaddingPx": 64,
+                "headerPx": 60,
+                "diagramChromePx": 84,
+                "svgPx": 780,
+                "cardsPx": 0,
+                "viewBoxHeight": 622
+              },
+              "viewBoxWidth": 1200,
+              "minimumProjectedNodeTextPx": 8,
+              "minimumProjectedNonEdgeTextPx": 9,
+              "minimumProjectedEdgeTextPx": 8,
+              "minimumProjectedNodeText": "Query",
+              "minimumProjectedNodeTextDetail": "edge",
+              "minimumProjectedNodeTextOwner": {
+                "kind": "edge",
+                "id": "c1",
+                "from": "user",
+                "to": "chat_interface"
+              },
+              "minimumRequiredNodeTextPx": 6,
+              "readabilityOk": true,
+              "hasLegend": true,
+              "hasNavigationDock": true,
+              "legendDockIntersectionArea": 0,
+              "dockStageIntersectionArea": 0,
+              "dockStageGap": 10,
+              "requiredDockStageGap": 10,
+              "viewerChromeStageOk": true,
+              "viewerChromeReserve": 54,
+              "viewerChromeActive": true,
+              "viewerChromeOk": true,
+              "resolvedTheme": "light"
+            },
+            {
+              "width": 1920,
+              "height": 1080,
+              "theme": "light",
+              "innerWidth": 1920,
+              "innerHeight": 1080,
+              "scrollWidth": 1920,
+              "scrollHeight": 1080,
+              "overflowX": false,
+              "overflowY": false,
+              "verticalScrollAccepted": false,
+              "overflowDisposition": "contained",
+              "readerLayout": "adaptive",
+              "readerOverflow": null,
+              "readerFit": "intrinsic-height",
+              "ok": true,
+              "readerWidth": 1689,
+              "diagramWidth": 1659,
+              "pageComposition": {
+                "bodyPaddingPx": 64,
+                "headerPx": 60,
+                "diagramChromePx": 84,
+                "svgPx": 860,
+                "cardsPx": 0,
+                "viewBoxHeight": 622
+              },
+              "viewBoxWidth": 1200,
+              "minimumProjectedNodeTextPx": 8,
+              "minimumProjectedNonEdgeTextPx": 9,
+              "minimumProjectedEdgeTextPx": 8,
+              "minimumProjectedNodeText": "Query",
+              "minimumProjectedNodeTextDetail": "edge",
+              "minimumProjectedNodeTextOwner": {
+                "kind": "edge",
+                "id": "c1",
+                "from": "user",
+                "to": "chat_interface"
+              },
+              "minimumRequiredNodeTextPx": 6,
+              "readabilityOk": true,
+              "hasLegend": true,
+              "hasNavigationDock": true,
+              "legendDockIntersectionArea": 0,
+              "dockStageIntersectionArea": 0,
+              "dockStageGap": 10,
+              "requiredDockStageGap": 10,
+              "viewerChromeStageOk": true,
+              "viewerChromeReserve": 54,
+              "viewerChromeActive": true,
+              "viewerChromeOk": true,
+              "resolvedTheme": "light"
+            },
+            {
+              "width": 2048,
+              "height": 1320,
+              "theme": "light",
+              "innerWidth": 2048,
+              "innerHeight": 1320,
+              "scrollWidth": 2048,
+              "scrollHeight": 1320,
+              "overflowX": false,
+              "overflowY": false,
+              "verticalScrollAccepted": false,
+              "overflowDisposition": "contained",
+              "readerLayout": "adaptive",
+              "readerOverflow": null,
+              "readerFit": "intrinsic-height",
+              "ok": true,
+              "readerWidth": 1920,
+              "diagramWidth": 1800,
+              "pageComposition": {
+                "bodyPaddingPx": 64,
+                "headerPx": 68,
+                "diagramChromePx": 243,
+                "svgPx": 933,
+                "cardsPx": 0,
+                "viewBoxHeight": 622
+              },
+              "viewBoxWidth": 1200,
+              "minimumProjectedNodeTextPx": 8,
+              "minimumProjectedNonEdgeTextPx": 9,
+              "minimumProjectedEdgeTextPx": 8,
+              "minimumProjectedNodeText": "Query",
+              "minimumProjectedNodeTextDetail": "edge",
+              "minimumProjectedNodeTextOwner": {
+                "kind": "edge",
+                "id": "c1",
+                "from": "user",
+                "to": "chat_interface"
+              },
+              "minimumRequiredNodeTextPx": 6,
+              "readabilityOk": true,
+              "hasLegend": true,
+              "hasNavigationDock": true,
+              "legendDockIntersectionArea": 0,
+              "dockStageIntersectionArea": 0,
+              "dockStageGap": 62.5,
+              "requiredDockStageGap": 10,
+              "viewerChromeStageOk": true,
+              "viewerChromeReserve": 0,
+              "viewerChromeActive": false,
+              "viewerChromeOk": true,
+              "resolvedTheme": "light"
+            }
+          ]
+        },
+        "themeStates": {
+          "status": "pass",
+          "viewports": [
+            {
+              "width": 1440,
+              "height": 900,
+              "requestedTheme": "light",
+              "resolvedTheme": "light",
+              "ok": true
+            },
+            {
+              "width": 1600,
+              "height": 1000,
+              "requestedTheme": "light",
+              "resolvedTheme": "light",
+              "ok": true
+            },
+            {
+              "width": 1920,
+              "height": 1080,
+              "requestedTheme": "light",
+              "resolvedTheme": "light",
+              "ok": true
+            },
+            {
+              "width": 2048,
+              "height": 1320,
+              "requestedTheme": "light",
+              "resolvedTheme": "light",
+              "ok": true
+            },
+            {
+              "width": 1440,
+              "height": 900,
+              "requestedTheme": "dark",
+              "resolvedTheme": "dark",
+              "ok": true
+            },
+            {
+              "width": 2048,
+              "height": 1320,
+              "requestedTheme": "dark",
+              "resolvedTheme": "dark",
+              "ok": true
+            }
+          ]
+        },
+        "readability": {
+          "status": "pass",
+          "minimumProjectedNodeTextPx": 6,
+          "viewports": [
+            {
+              "width": 1440,
+              "height": 900,
+              "theme": "light",
+              "innerWidth": 1440,
+              "innerHeight": 900,
+              "scrollWidth": 1440,
+              "scrollHeight": 900,
+              "overflowX": false,
+              "overflowY": false,
+              "verticalScrollAccepted": false,
+              "overflowDisposition": "contained",
+              "readerLayout": "adaptive",
+              "readerOverflow": null,
+              "readerFit": "intrinsic-height",
+              "ok": true,
+              "readerWidth": 1376,
+              "diagramWidth": 1346,
+              "pageComposition": {
+                "bodyPaddingPx": 12,
+                "headerPx": 52,
+                "diagramChromePx": 78,
+                "svgPx": 698,
+                "cardsPx": 0,
+                "viewBoxHeight": 622
+              },
+              "viewBoxWidth": 1200,
+              "minimumProjectedNodeTextPx": 8,
+              "minimumProjectedNonEdgeTextPx": 9,
+              "minimumProjectedEdgeTextPx": 8,
+              "minimumProjectedNodeText": "Query",
+              "minimumProjectedNodeTextDetail": "edge",
+              "minimumProjectedNodeTextOwner": {
+                "kind": "edge",
+                "id": "c1",
+                "from": "user",
+                "to": "chat_interface"
+              },
+              "minimumRequiredNodeTextPx": 6,
+              "readabilityOk": true,
+              "hasLegend": true,
+              "hasNavigationDock": true,
+              "legendDockIntersectionArea": 0,
+              "dockStageIntersectionArea": 0,
+              "dockStageGap": 10,
+              "requiredDockStageGap": 10,
+              "viewerChromeStageOk": true,
+              "viewerChromeReserve": 54,
+              "viewerChromeActive": true,
+              "viewerChromeOk": true,
+              "resolvedTheme": "light"
+            },
+            {
+              "width": 1600,
+              "height": 1000,
+              "theme": "light",
+              "innerWidth": 1600,
+              "innerHeight": 1000,
+              "scrollWidth": 1600,
+              "scrollHeight": 1000,
+              "overflowX": false,
+              "overflowY": false,
+              "verticalScrollAccepted": false,
+              "overflowDisposition": "contained",
+              "readerLayout": "adaptive",
+              "readerOverflow": null,
+              "readerFit": "intrinsic-height",
+              "ok": true,
+              "readerWidth": 1535,
+              "diagramWidth": 1505,
+              "pageComposition": {
+                "bodyPaddingPx": 64,
+                "headerPx": 60,
+                "diagramChromePx": 84,
+                "svgPx": 780,
+                "cardsPx": 0,
+                "viewBoxHeight": 622
+              },
+              "viewBoxWidth": 1200,
+              "minimumProjectedNodeTextPx": 8,
+              "minimumProjectedNonEdgeTextPx": 9,
+              "minimumProjectedEdgeTextPx": 8,
+              "minimumProjectedNodeText": "Query",
+              "minimumProjectedNodeTextDetail": "edge",
+              "minimumProjectedNodeTextOwner": {
+                "kind": "edge",
+                "id": "c1",
+                "from": "user",
+                "to": "chat_interface"
+              },
+              "minimumRequiredNodeTextPx": 6,
+              "readabilityOk": true,
+              "hasLegend": true,
+              "hasNavigationDock": true,
+              "legendDockIntersectionArea": 0,
+              "dockStageIntersectionArea": 0,
+              "dockStageGap": 10,
+              "requiredDockStageGap": 10,
+              "viewerChromeStageOk": true,
+              "viewerChromeReserve": 54,
+              "viewerChromeActive": true,
+              "viewerChromeOk": true,
+              "resolvedTheme": "light"
+            },
+            {
+              "width": 1920,
+              "height": 1080,
+              "theme": "light",
+              "innerWidth": 1920,
+              "innerHeight": 1080,
+              "scrollWidth": 1920,
+              "scrollHeight": 1080,
+              "overflowX": false,
+              "overflowY": false,
+              "verticalScrollAccepted": false,
+              "overflowDisposition": "contained",
+              "readerLayout": "adaptive",
+              "readerOverflow": null,
+              "readerFit": "intrinsic-height",
+              "ok": true,
+              "readerWidth": 1689,
+              "diagramWidth": 1659,
+              "pageComposition": {
+                "bodyPaddingPx": 64,
+                "headerPx": 60,
+                "diagramChromePx": 84,
+                "svgPx": 860,
+                "cardsPx": 0,
+                "viewBoxHeight": 622
+              },
+              "viewBoxWidth": 1200,
+              "minimumProjectedNodeTextPx": 8,
+              "minimumProjectedNonEdgeTextPx": 9,
+              "minimumProjectedEdgeTextPx": 8,
+              "minimumProjectedNodeText": "Query",
+              "minimumProjectedNodeTextDetail": "edge",
+              "minimumProjectedNodeTextOwner": {
+                "kind": "edge",
+                "id": "c1",
+                "from": "user",
+                "to": "chat_interface"
+              },
+              "minimumRequiredNodeTextPx": 6,
+              "readabilityOk": true,
+              "hasLegend": true,
+              "hasNavigationDock": true,
+              "legendDockIntersectionArea": 0,
+              "dockStageIntersectionArea": 0,
+              "dockStageGap": 10,
+              "requiredDockStageGap": 10,
+              "viewerChromeStageOk": true,
+              "viewerChromeReserve": 54,
+              "viewerChromeActive": true,
+              "viewerChromeOk": true,
+              "resolvedTheme": "light"
+            },
+            {
+              "width": 2048,
+              "height": 1320,
+              "theme": "light",
+              "innerWidth": 2048,
+              "innerHeight": 1320,
+              "scrollWidth": 2048,
+              "scrollHeight": 1320,
+              "overflowX": false,
+              "overflowY": false,
+              "verticalScrollAccepted": false,
+              "overflowDisposition": "contained",
+              "readerLayout": "adaptive",
+              "readerOverflow": null,
+              "readerFit": "intrinsic-height",
+              "ok": true,
+              "readerWidth": 1920,
+              "diagramWidth": 1800,
+              "pageComposition": {
+                "bodyPaddingPx": 64,
+                "headerPx": 68,
+                "diagramChromePx": 243,
+                "svgPx": 933,
+                "cardsPx": 0,
+                "viewBoxHeight": 622
+              },
+              "viewBoxWidth": 1200,
+              "minimumProjectedNodeTextPx": 8,
+              "minimumProjectedNonEdgeTextPx": 9,
+              "minimumProjectedEdgeTextPx": 8,
+              "minimumProjectedNodeText": "Query",
+              "minimumProjectedNodeTextDetail": "edge",
+              "minimumProjectedNodeTextOwner": {
+                "kind": "edge",
+                "id": "c1",
+                "from": "user",
+                "to": "chat_interface"
+              },
+              "minimumRequiredNodeTextPx": 6,
+              "readabilityOk": true,
+              "hasLegend": true,
+              "hasNavigationDock": true,
+              "legendDockIntersectionArea": 0,
+              "dockStageIntersectionArea": 0,
+              "dockStageGap": 62.5,
+              "requiredDockStageGap": 10,
+              "viewerChromeStageOk": true,
+              "viewerChromeReserve": 0,
+              "viewerChromeActive": false,
+              "viewerChromeOk": true,
+              "resolvedTheme": "light"
+            }
+          ]
+        },
+        "viewerChrome": {
+          "status": "pass",
+          "viewports": [
+            {
+              "width": 1440,
+              "height": 900,
+              "theme": "light",
+              "innerWidth": 1440,
+              "innerHeight": 900,
+              "scrollWidth": 1440,
+              "scrollHeight": 900,
+              "overflowX": false,
+              "overflowY": false,
+              "verticalScrollAccepted": false,
+              "overflowDisposition": "contained",
+              "readerLayout": "adaptive",
+              "readerOverflow": null,
+              "readerFit": "intrinsic-height",
+              "ok": true,
+              "readerWidth": 1376,
+              "diagramWidth": 1346,
+              "pageComposition": {
+                "bodyPaddingPx": 12,
+                "headerPx": 52,
+                "diagramChromePx": 78,
+                "svgPx": 698,
+                "cardsPx": 0,
+                "viewBoxHeight": 622
+              },
+              "viewBoxWidth": 1200,
+              "minimumProjectedNodeTextPx": 8,
+              "minimumProjectedNonEdgeTextPx": 9,
+              "minimumProjectedEdgeTextPx": 8,
+              "minimumProjectedNodeText": "Query",
+              "minimumProjectedNodeTextDetail": "edge",
+              "minimumProjectedNodeTextOwner": {
+                "kind": "edge",
+                "id": "c1",
+                "from": "user",
+                "to": "chat_interface"
+              },
+              "minimumRequiredNodeTextPx": 6,
+              "readabilityOk": true,
+              "hasLegend": true,
+              "hasNavigationDock": true,
+              "legendDockIntersectionArea": 0,
+              "dockStageIntersectionArea": 0,
+              "dockStageGap": 10,
+              "requiredDockStageGap": 10,
+              "viewerChromeStageOk": true,
+              "viewerChromeReserve": 54,
+              "viewerChromeActive": true,
+              "viewerChromeOk": true,
+              "resolvedTheme": "light"
+            },
+            {
+              "width": 1600,
+              "height": 1000,
+              "theme": "light",
+              "innerWidth": 1600,
+              "innerHeight": 1000,
+              "scrollWidth": 1600,
+              "scrollHeight": 1000,
+              "overflowX": false,
+              "overflowY": false,
+              "verticalScrollAccepted": false,
+              "overflowDisposition": "contained",
+              "readerLayout": "adaptive",
+              "readerOverflow": null,
+              "readerFit": "intrinsic-height",
+              "ok": true,
+              "readerWidth": 1535,
+              "diagramWidth": 1505,
+              "pageComposition": {
+                "bodyPaddingPx": 64,
+                "headerPx": 60,
+                "diagramChromePx": 84,
+                "svgPx": 780,
+                "cardsPx": 0,
+                "viewBoxHeight": 622
+              },
+              "viewBoxWidth": 1200,
+              "minimumProjectedNodeTextPx": 8,
+              "minimumProjectedNonEdgeTextPx": 9,
+              "minimumProjectedEdgeTextPx": 8,
+              "minimumProjectedNodeText": "Query",
+              "minimumProjectedNodeTextDetail": "edge",
+              "minimumProjectedNodeTextOwner": {
+                "kind": "edge",
+                "id": "c1",
+                "from": "user",
+                "to": "chat_interface"
+              },
+              "minimumRequiredNodeTextPx": 6,
+              "readabilityOk": true,
+              "hasLegend": true,
+              "hasNavigationDock": true,
+              "legendDockIntersectionArea": 0,
+              "dockStageIntersectionArea": 0,
+              "dockStageGap": 10,
+              "requiredDockStageGap": 10,
+              "viewerChromeStageOk": true,
+              "viewerChromeReserve": 54,
+              "viewerChromeActive": true,
+              "viewerChromeOk": true,
+              "resolvedTheme": "light"
+            },
+            {
+              "width": 1920,
+              "height": 1080,
+              "theme": "light",
+              "innerWidth": 1920,
+              "innerHeight": 1080,
+              "scrollWidth": 1920,
+              "scrollHeight": 1080,
+              "overflowX": false,
+              "overflowY": false,
+              "verticalScrollAccepted": false,
+              "overflowDisposition": "contained",
+              "readerLayout": "adaptive",
+              "readerOverflow": null,
+              "readerFit": "intrinsic-height",
+              "ok": true,
+              "readerWidth": 1689,
+              "diagramWidth": 1659,
+              "pageComposition": {
+                "bodyPaddingPx": 64,
+                "headerPx": 60,
+                "diagramChromePx": 84,
+                "svgPx": 860,
+                "cardsPx": 0,
+                "viewBoxHeight": 622
+              },
+              "viewBoxWidth": 1200,
+              "minimumProjectedNodeTextPx": 8,
+              "minimumProjectedNonEdgeTextPx": 9,
+              "minimumProjectedEdgeTextPx": 8,
+              "minimumProjectedNodeText": "Query",
+              "minimumProjectedNodeTextDetail": "edge",
+              "minimumProjectedNodeTextOwner": {
+                "kind": "edge",
+                "id": "c1",
+                "from": "user",
+                "to": "chat_interface"
+              },
+              "minimumRequiredNodeTextPx": 6,
+              "readabilityOk": true,
+              "hasLegend": true,
+              "hasNavigationDock": true,
+              "legendDockIntersectionArea": 0,
+              "dockStageIntersectionArea": 0,
+              "dockStageGap": 10,
+              "requiredDockStageGap": 10,
+              "viewerChromeStageOk": true,
+              "viewerChromeReserve": 54,
+              "viewerChromeActive": true,
+              "viewerChromeOk": true,
+              "resolvedTheme": "light"
+            },
+            {
+              "width": 2048,
+              "height": 1320,
+              "theme": "light",
+              "innerWidth": 2048,
+              "innerHeight": 1320,
+              "scrollWidth": 2048,
+              "scrollHeight": 1320,
+              "overflowX": false,
+              "overflowY": false,
+              "verticalScrollAccepted": false,
+              "overflowDisposition": "contained",
+              "readerLayout": "adaptive",
+              "readerOverflow": null,
+              "readerFit": "intrinsic-height",
+              "ok": true,
+              "readerWidth": 1920,
+              "diagramWidth": 1800,
+              "pageComposition": {
+                "bodyPaddingPx": 64,
+                "headerPx": 68,
+                "diagramChromePx": 243,
+                "svgPx": 933,
+                "cardsPx": 0,
+                "viewBoxHeight": 622
+              },
+              "viewBoxWidth": 1200,
+              "minimumProjectedNodeTextPx": 8,
+              "minimumProjectedNonEdgeTextPx": 9,
+              "minimumProjectedEdgeTextPx": 8,
+              "minimumProjectedNodeText": "Query",
+              "minimumProjectedNodeTextDetail": "edge",
+              "minimumProjectedNodeTextOwner": {
+                "kind": "edge",
+                "id": "c1",
+                "from": "user",
+                "to": "chat_interface"
+              },
+              "minimumRequiredNodeTextPx": 6,
+              "readabilityOk": true,
+              "hasLegend": true,
+              "hasNavigationDock": true,
+              "legendDockIntersectionArea": 0,
+              "dockStageIntersectionArea": 0,
+              "dockStageGap": 62.5,
+              "requiredDockStageGap": 10,
+              "viewerChromeStageOk": true,
+              "viewerChromeReserve": 0,
+              "viewerChromeActive": false,
+              "viewerChromeOk": true,
+              "resolvedTheme": "light"
+            }
+          ]
+        },
+        "captures": {
+          "status": "not-requested",
+          "screenshots": [],
+          "contactSheet": null
+        },
+        "sidecars": {
+          "receipt": "system-architecture.browser-check.json",
+          "files": []
+        }
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": true,
+    "ran": true
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "D:\\GenAI\\Task\\Nosh_Robotics\\.archify\\architecture-recipe-chatbot-20261118-043523\\system-architecture.finalize.json",
+    "summaryReceipt": "D:\\GenAI\\Task\\Nosh_Robotics\\.archify\\architecture-recipe-chatbot-20261118-043523\\system-architecture.finalize-summary.json",
+    "browserCheckReceipt": "D:\\GenAI\\Task\\Nosh_Robotics\\.archify\\architecture-recipe-chatbot-20261118-043523\\system-architecture.browser-check.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-18T04:51:09.777Z",
+  "durationMs": 3342,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-18T04:36:27.814Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

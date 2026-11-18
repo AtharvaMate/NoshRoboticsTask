@@ -65,10 +65,14 @@ The **Recipe Intelligence Chatbot** is an advanced conversational AI system that
 The Recipe Intelligence Chatbot follows a layered architecture with specialized processing engines, ML model components, and persistent data storage. The diagram below shows the complete system flow from user query to response.
 
 <div align="center">
-
-![System Architecture](docs/system-architecture.svg)
-
+  <a href=".archify/architecture-recipe-chatbot-20261118-043523/system-architecture.html">
+    <img src="docs/system-architecture.svg" alt="System Architecture Diagram" width="100%" />
+  </a>
+  <br/>
+  <em>Click diagram to explore the interactive version</em>
 </div>
+
+> **Note**: If the diagram doesn't display properly on GitHub, please view the [interactive HTML version](.archify/architecture-recipe-chatbot-20261118-043523/system-architecture.html) which includes animations, dark/light themes, and detailed component information.
 
 ### Key Architecture Components
 
