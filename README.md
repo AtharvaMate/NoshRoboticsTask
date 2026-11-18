@@ -66,8 +66,6 @@ The Recipe Intelligence Chatbot follows a layered architecture with specialized 
 
 <img src="docs/system-architecture.svg" alt="System Architecture" width="100%" />
 
-> **Note**: If the diagram doesn't display properly on GitHub, please view the [interactive HTML version](.archify/architecture-recipe-chatbot-20261118-043523/system-architecture.html) which includes animations, dark/light themes, and detailed component information.
-
 ### Key Architecture Components
 
 **Presentation Layer**
